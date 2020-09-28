@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED5D80E6-BE1F-4F3E-A6F0-90A4DF82F841}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatternsLib</RootNamespace>
+    <AssemblyName>DesignPatternsLib</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactory\AbstractFactoryPresentation.cs" />
+    <Compile Include="AbstractFactory\BattleDroidFactory.cs" />
+    <Compile Include="AbstractFactory\BOneBattleDroid.cs" />
+    <Compile Include="AbstractFactory\CThreePODroid.cs" />
+    <Compile Include="AbstractFactory\Droideka.cs" />
+    <Compile Include="AbstractFactory\IDroidFactory.cs" />
+    <Compile Include="AbstractFactory\ISpiderDroid.cs" />
+    <Compile Include="AbstractFactory\IWalkingDroid.cs" />
+    <Compile Include="AbstractFactory\ServingDroidFactory.cs" />
+    <Compile Include="AbstractFactory\SpiderWaiterDroid.cs" />
+    <Compile Include="Adapter\AdapterPresentation.cs" />
+    <Compile Include="Adapter\CloneArmy.cs" />
+    <Compile Include="Adapter\IEmpire.cs" />
+    <Compile Include="Adapter\Palpatine.cs" />
+    <Compile Include="Adapter\Republic.cs" />
+    <Compile Include="Brigde\BridgePresentation.cs" />
+    <Compile Include="Brigde\GreenCrystal.cs" />
+    <Compile Include="Brigde\ICrystal.cs" />
+    <Compile Include="Brigde\ILightsaber.cs" />
+    <Compile Include="Brigde\OneSideLightsaber.cs" />
+    <Compile Include="Brigde\RedCrystal.cs" />
+    <Compile Include="Brigde\TwoSidedLightsaber.cs" />
+    <Compile Include="Bulider\BuilderPresentation.cs" />
+    <Compile Include="Bulider\ICruiserBuilder.cs" />
+    <Compile Include="Bulider\KaminoFacility.cs" />
+    <Compile Include="Bulider\VentatorCruiser.cs" />
+    <Compile Include="Bulider\VentatorCruiserBuilder.cs" />
+    <Compile Include="Composite\CompositePresentation.cs" />
+    <Compile Include="Composite\HyperdriveAssembly.cs" />
+    <Compile Include="Composite\IHyperdrive.cs" />
+    <Compile Include="Composite\Pilot.cs" />
+    <Compile Include="Composite\SingleHyperdive.cs" />
+    <Compile Include="Decorator\DecoratorPresentation.cs" />
+    <Compile Include="Decorator\Sith.cs" />
+    <Compile Include="Decorator\SithMaster.cs" />
+    <Compile Include="Facade\Engines.cs" />
+    <Compile Include="Facade\FacadePresentation.cs" />
+    <Compile Include="Facade\HyperFuelSystem.cs" />
+    <Compile Include="Facade\LifeSuportSystem.cs" />
+    <Compile Include="Facade\NavigationSystem.cs" />
+    <Compile Include="Facade\PilotsConsole.cs" />
+    <Compile Include="Facade\Shields.cs" />
+    <Compile Include="FactoryMethod\CapitalShip.cs" />
+    <Compile Include="FactoryMethod\FighterFactory.cs" />
+    <Compile Include="FactoryMethod\IFighter.cs" />
+    <Compile Include="FactoryMethod\FactoryMethodPresentation.cs" />
+    <Compile Include="FactoryMethod\TieFighter.cs" />
+    <Compile Include="FactoryMethod\TieFighterFactory.cs" />
+    <Compile Include="FactoryMethod\XWing.cs" />
+    <Compile Include="FactoryMethod\XWingFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\Blaster.cs" />
+    <Compile Include="Prototype\CloneTrooper.cs" />
+    <Compile Include="Prototype\ExtenionMethods.cs" />
+    <Compile Include="Prototype\PrototypePresentation.cs" />
+    <Compile Include="Singleton\Force.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
